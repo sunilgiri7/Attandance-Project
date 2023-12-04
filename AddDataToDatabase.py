@@ -28,7 +28,7 @@ data = {
         "Year":3,
         "Last_Attandance_Time":"2023-01-25 00:52:44"
     },
-    "mark1":
+    "mark2":
     {
         "Name":"mark zugerberg",
         "Major":"E-commerce",
@@ -43,7 +43,43 @@ data = {
         "Major":"Computer Application",
         "Starting_year":2021,
         "Total_Attandance":20,
-        "Year":2,
+        "Year":3,
+        "Last_Attandance_Time":"2022-01-24 00:24:54"
+    },
+    "gaurav":
+    {
+        "Name":"Gaurav Bohra",
+        "Major":"CSE",
+        "Starting_year":2020,
+        "Total_Attandance":0,
+        "Year":4,
+        "Last_Attandance_Time":"2022-01-24 00:24:54"
+    },
+    "bishal":
+    {
+        "Name":"Bishal Kumar Yadav",
+        "Major":"CSE",
+        "Starting_year":2020,
+        "Total_Attandance":0,
+        "Year":4,
+        "Last_Attandance_Time":"2022-01-24 00:24:54"
+    },
+    "bikash":
+    {
+        "Name":"Bikash Kumar",
+        "Major":"CSE",
+        "Starting_year":2020,
+        "Total_Attandance":0,
+        "Year":4,
+        "Last_Attandance_Time":"2022-01-24 00:24:54"
+    },
+    "gautam":
+    {
+        "Name":"Gautam Kumar",
+        "Major":"CSE",
+        "Starting_year":2020,
+        "Total_Attandance":0,
+        "Year":4,
         "Last_Attandance_Time":"2022-01-24 00:24:54"
     }
 }

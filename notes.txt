@@ -1,0 +1,11 @@
+1. To install dlib
+https://github.com/sachadee/Dlib download zip file pf this ripo then unzip in local machine
+then pip install <fullname of one of file> (fullname is like dlib-19.22.99-cp39-cp39-win_amd64.whl)
+where 39 means python version 9
+
+
+
+once the face is detected you'll see there a bit of delay or lag 
+this is because it is downloading a data from database
+to avoid this lag we need to use asynchronous function
+soon we will work on this update to make it work in real time 

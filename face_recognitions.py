@@ -84,15 +84,18 @@ modeType = 0
 cap = cv2.VideoCapture(0)
 while True:
     sucess, img = cap.read()
+    if not sucess or img is None:
+        print("Error: Could not read frame from the camera.")
+        break
     imgS = cv2.resize(img,(0,0),None,0.25,0.25)
     imgS = cv2.cvtColor(imgS, cv2.COLOR_BGR2RGB)
     facesFrame = face_recognition.face_locations(imgS)
     encodeFrame = face_recognition.face_encodings(imgS,facesFrame)
 
     imgBackground[162:162 + 480, 55:55 + 640] = img
-    imgBackground[44:44 + 633, 808:808 + 414] = imgModeList[modeType]
-
-
+    resized_mode_image = cv2.resize(imgModeList[modeType], (640, 480))
+    imgBackground[44:44 + 480, 808:808 + 640] = resized_mode_image
+    # imgBackground[44:44 + 633, 808:808 + 414] = imgModeList[modeType]
 
     for encodeFace, faceLoc in zip(encodeFrame, facesFrame):
         matches = face_recognition.compare_faces(encodeList, encodeFace)
